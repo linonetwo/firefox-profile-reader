@@ -1,9 +1,9 @@
 {
-  "name": "firefox-profile-parser",
+  "name": "firefox-profile-reader",
   "version": "0.1.0",
   "main": "dist/index.js",
-  "umd:main": "dist/firefox-profile-parser.umd.production.js",
-  "module": "dist/firefox-profile-parser.es.production.js",
+  "umd:main": "dist/firefox-profile-reader.umd.production.js",
+  "module": "dist/firefox-profile-reader.es.production.js",
   "typings": "dist/index.d.ts",
   "files": [
     "dist"
