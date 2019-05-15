@@ -1,6 +1,6 @@
 {
   "name": "firefox-profile-reader",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "main": "dist/index.js",
   "umd:main": "dist/firefox-profile-reader.umd.production.js",
   "module": "dist/firefox-profile-reader.es.production.js",
@@ -10,7 +10,8 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "tsdx build && cp ./src/mozlz4 dist && cp ./src/sqlite3 dist",
+    "build": "tsdx build",
+    "prepublish": "tsdx build && cp ./src/mozlz4 dist && cp ./src/sqlite3 dist",
     "test": "tsdx test"
   },
   "peerDependencies": {},
