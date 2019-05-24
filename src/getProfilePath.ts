@@ -27,7 +27,9 @@ export default async function getProfilePath(version: string = 'default') {
       const filePath = `${os.homedir()}/Library/Application Support/Firefox/Profiles`;
       const subDirs = await readdirAsync(filePath);
       const userProfileDir = subDirs.filter(
-        dirName => dirName.split('.')[1] === version
+        dirName =>
+          dirName.split('.')[1] === version ||
+          dirName.split('.')[1] === `${version}-release`
       )[0];
       return path.join(filePath, userProfileDir);
     }
